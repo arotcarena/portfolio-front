@@ -1,0 +1,110 @@
+.search-wrapper {
+    position: relative;
+}
+.search-input {
+    height: 45px;
+    width: 100%;
+    padding-left: 42px;
+    padding-right: 38px;
+    border: var(--border-input);
+    border-radius: 6px;
+    font-weight: 400;
+}
+.search-input::placeholder {
+    font-size: 1em;
+    font-weight: 200;
+}
+.search-input.open {
+    border-radius: 6px 6px 0 0;
+    border-bottom: none;
+}
+.header.menu-expanded .search-input.open {
+    border-radius: 6px;
+    border: var(--border-input);
+}
+.header.menu-expanded .skill-list {
+    display: none;
+}
+
+.search-wrapper .i-close, .search-wrapper .loader {
+    width: 1.2em;
+    height: 1.2em;
+}
+.search-wrapper .loader {
+    opacity: .7;
+}
+.search-wrapper .close-button, .search-wrapper .loader {
+    position: absolute;
+    top: calc(50% - .6em);
+}
+.search-wrapper .close-button, .search-wrapper .loader {
+    right: 10px;
+    left: auto;
+}
+.search-wrapper .i-search {
+    left: 10px;
+    right: auto;
+    width: 1.7em;
+    height: 1.7em;
+    position: absolute;
+    top: calc(50% - .85em);
+}
+
+.skill-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 3;
+    border: var(--border-input);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    padding: 7px 15px;
+}
+.skill-list-item {
+    padding: 6px 0;
+    font-size: .8em;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.skill-list-item-img {
+    width: 25px;
+    height: 25px;
+    flex: none;
+    display: block;
+}
+
+.skill-list-item-body {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (min-width: 1050px) {
+    .skill-list-item-title {
+        font-size: 1.2em;
+    }
+}
+
+
+
+.mobile-menu-nav .search-input {
+    height: 50px;
+    padding-left: 35px;
+    font-size: .9em;
+}
+.mobile-menu-nav .search-input::placeholder {
+    font-size: .9em;
+}
+.mobile-menu-nav .search-wrapper .i-search {
+    left: 3px;
+    width: 1.6em;
+    height: 1.6em;
+    top: calc(50% - .8em);
+    opacity: .9;
+}

@@ -1,0 +1,75 @@
+.comments-block {
+    margin-top: 30px;
+    font-size: .9em;
+}
+.comment-form {
+    background-color: rgb(245, 245, 245);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 50px 0;
+    max-width: 450px;
+}
+.comments-title {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.comments-title.big {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+.answers-title {
+    font-weight: 600;
+    font-size: .9em;
+    margin-bottom: 7px;
+}
+.comment-item-answers-wrapper {
+    margin: 20px;
+    margin-right: 0;
+}
+.comment-item-answers {
+    font-size: .9em;
+}
+.comments-title.big.border-title::after {
+    position: relative;
+    bottom: -4px;
+}
+.comment-item {
+    padding: 12px 0;
+    border-bottom: solid 1px rgb(225, 225, 225);
+}
+.comment-item:last-child {
+    border-bottom: none;
+}
+.comment-item-header {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 0;
+    flex-wrap: wrap;
+    padding-right: 100px;
+    position: relative;
+}
+.comment-item-header .chip {
+    position: absolute;
+    font-size: .7em;
+    top: 0;
+    right: 0;
+    margin-left: 10px;
+}
+.comment-item-title {
+    color: var(--color-base);
+    font-weight: 600;
+}
+.comment-item-body {
+    margin-top: 0;
+}
+.answer-item.by-admin .comment-item-body {
+    margin-top: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+    .comment-form {
+        padding: 18px 23px;
+    }
+}

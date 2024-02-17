@@ -1,0 +1,94 @@
+.project-show .img-selector-wrapper {
+    display: none;
+}
+.carousel-wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+
+.project-show-title {
+    font-weight: 600;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+.project-show .chip {
+    display: inline;
+}
+.project-show-text {
+    margin: 10px 0;
+}
+.project-show-text.html-content {
+    margin: 20px 0;
+}
+.project-show-text.big {
+    font-weight: 600;
+    font-size: .9em;
+}
+
+.project-show .external-link-wrapper {
+    margin-top: 40px;
+}
+
+@media only screen and (min-width: 450px) {
+    .product-img-wrapper .product-img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    .carousel-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .project-show-title {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (min-width: 650px) {
+    .carousel-wrapper {
+        display: none;
+    }
+    .project-show .img-selector-wrapper {
+        display: flex;
+    }
+    .project-show-title {
+        font-size: 2.5em;
+    }
+    .project-show-text.big {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    .project-show .img-selector-wrapper {
+        position: sticky;
+        top: 20px;
+        transition: top ease-in-out .3s;
+    }
+    body.scroll-up .project-show .img-selector-wrapper {
+        top: 90px;
+    }
+  
+}
+
+@media only screen and (min-width: 1050px) {
+    .project-show {
+        display: flex;
+        gap: 20px;
+    }
+    .project-show-right-col {
+        width: 40%;
+        flex: none;
+        min-width: 375px;
+    }
+    .project-show-left-col {
+        flex: 1 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .project-show-title {
+        font-size: 3.5em;
+    }
+}

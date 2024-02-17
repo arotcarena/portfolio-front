@@ -1,0 +1,82 @@
+.desktop-expand-menu-wrapper {
+    max-height: calc(100vh - 100px);
+    background-color: #FFF;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 400px;
+    opacity: 0;
+    animation: appears forwards .2s .1s;
+    overflow: hidden;
+}
+
+.desktop-expand-menu-wrapper * {
+    opacity: 0;
+    animation: appearsWithTransform forwards .5s .1s;
+}
+
+.desktop-menu-nav-item.expandable {
+    font-size: 1.1em;
+}
+
+@keyframes appears {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+@keyframes appearsWithTransform {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.desk-expand-menu-project-list-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.desk-expand-menu-project-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 30px;
+    width: 100%;
+}
+
+.desk-expand-menu-project-list .mobile-menu-project-item {
+    flex-direction: column;
+    margin: 0;
+    width: 200px;
+}
+.desk-expand-menu-project-list .mobile-menu-project-img {
+    width: 200px;
+    height: auto;
+    border-radius: 0;
+}
+
+.desktop-expand-menu-wrapper > div {
+    height: 100%;
+    border-bottom: solid 1px rgb(225, 225, 225);
+} 
+.expandable-menu-item.cv-menu-item {
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+}
+
+.desktop-expand-menu-wrapper .expandable-menu-item.cv-menu-item img {
+    height: 250px;
+    width: auto;
+}
+
