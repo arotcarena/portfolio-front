@@ -53,7 +53,7 @@ export const ProfileFooter = () => {
                             width={25}
                             height={25}
                         />
-                        <a target="_blank" href="https://github.com/bayaro1" style={{fontSize: '.9em'}}>github.com/bayaro1</a>
+                        <a target="_blank" href="https://github.com/arotcarena" style={{fontSize: '.9em'}}>github.com/arotcarena</a>
                     </div>
                 </div>
             </div>
