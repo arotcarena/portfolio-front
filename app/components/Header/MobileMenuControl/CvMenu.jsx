@@ -8,7 +8,7 @@ export const CvMenu = () => {
                 <a target="_blank" href="/profile/cv.pdf">
                     <Image
                         className="cv-img"
-                        src="/profile/cv_screen.jpg"
+                        src="/profile/cv_screen.png"
                         alt="CV Ibai Arotçarena"
                         width={100}
                         height={150}

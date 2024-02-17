@@ -17,8 +17,8 @@ export const ProfileFooter = () => {
                             height={60}
                         />
                         <div className="footer-item-body">
-                            <div>Ibai Arotçarena</div>
-                            <div>35 ans</div>
+                            <div>Ibai</div>
+                            <div>Arotçarena</div>
                         </div>
                     </div>
                 </div>
