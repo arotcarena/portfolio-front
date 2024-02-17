@@ -69,6 +69,9 @@
     gap: 10px;
     align-items: center;
 }
+.skill-list-item-title {
+    font-weight: 500;
+}
 
 .skill-list-item-img {
     width: 25px;
