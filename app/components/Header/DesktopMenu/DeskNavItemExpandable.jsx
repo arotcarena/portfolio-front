@@ -50,7 +50,7 @@ export const DeskNavItemExpandable = forwardRef(({children, renderExpandMenu}, h
             {
                 isOpen && createPortal(
                     (
-                        <div className="desktop-expand-menu-wrapper">
+                        <div onClick={e => e.stopPropagation()} className="desktop-expand-menu-wrapper">
                             {renderExpandMenu(close)}
                         </div>
                     ),
