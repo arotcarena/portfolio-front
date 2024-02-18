@@ -16,6 +16,9 @@ export const DeskNavItemExpandable = forwardRef(({children, renderExpandMenu}, h
     const handleMouseLeave = () => {
         delayAction(close);
     }
+    const handleCloseExpandMenu = () => {
+        delayAction(close);
+    }
 
     useEffect(() => {
         if(headerRef.current) {
@@ -51,7 +54,7 @@ export const DeskNavItemExpandable = forwardRef(({children, renderExpandMenu}, h
                 isOpen && createPortal(
                     (
                         <div onClick={e => e.stopPropagation()} className="desktop-expand-menu-wrapper">
-                            {renderExpandMenu(close)}
+                            {renderExpandMenu(handleCloseExpandMenu)}
                         </div>
                     ),
                     document.body
