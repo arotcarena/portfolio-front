@@ -17,7 +17,8 @@ export const DeskNavItemExpandable = forwardRef(({children, renderExpandMenu}, h
         delayAction(close);
     }
     const handleCloseExpandMenu = () => {
-        delayAction(close);
+        clearTimer();
+        close();
     }
 
     useEffect(() => {
