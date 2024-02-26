@@ -182,10 +182,6 @@ input {
     margin: 10px 0;
 }
 
-.ugc-text {
-    white-space: pre-wrap;
-}
-
 
 @media only screen and (min-width: 650px) {
     .page {

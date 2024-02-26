@@ -1,6 +1,7 @@
 import { getDateTimeString } from "@/app/lib/helpers/dateToString"
 import { CommentListSkeleton } from "../skeletons/CommentListSkeleton";
 import Image from "next/image";
+import nl2br from "react-nl2br";
 
 export const CommentList = ({commentsHydra}) => {
 
@@ -38,7 +39,7 @@ const CommentItem = ({comment}) => {
                 }
                 <div className="chip">{getDateTimeString(comment.createdAt)}</div>
             </div>
-            <div className="comment-item-body ugc-text">{comment.content}</div>
+            <div className="comment-item-body ugc-text">{nl2br(comment.content)}</div>
             {
                 comment.answers.length > 0 && (
                     <div className="comment-item-answers-wrapper">
@@ -82,7 +83,7 @@ const AnswerItem = ({answer}) => {
                 }
                 <div className="chip">{getDateTimeString(answer.createdAt)}</div>
             </div>
-            <div className="comment-item-body ugc-text">{answer.content}</div>
+            <div className="comment-item-body ugc-text">{nl2br(answer.content)}</div>
         </div>
     )
 }
